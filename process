@@ -1,8 +1,0 @@
-1. Initialize Projects
-2. Running the server
-3. .gitingnore file create
-4. .env file create
-5. routes folder create --> (specific routes file)
-6. controllers folder create --> (specific controller file)
-7. schemas folder create --> (specific schemas file)
-8. model folder create --> (specific model file)
