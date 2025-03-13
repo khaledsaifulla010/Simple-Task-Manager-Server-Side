@@ -1,27 +1,26 @@
 const mongoose = require("mongoose");
 
 const taskSchema = new mongoose.Schema({
-  titie: {
+  title: {
     type: String,
     required: true,
   },
   completed: {
-    type: String,
+    type: Boolean,
     default: false,
   },
   taskStatus: {
     type: String,
-    enum: {
-      values: ["Pending", "Done"],
-    },
+    enum: ["Pending", "Done"],
+    default: "Pending",
   },
   taskCreatedTime: {
     type: Date,
-    default: Date.now(),
+    default: Date.now,
   },
   taskFinishedTime: {
     type: Date,
-    default: Date.now(),
+    default: Date.now,
   },
 });
 
